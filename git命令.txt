@@ -23,8 +23,8 @@ git config --global user.email "1835929466@qq.com"
 
 git add .	//添加所有文件及子文件到缓冲
 
-git commit -m "zhushi" 	//提交（不能用）
-git push origin master	//推到服务端,(不能用)
+git commit -m "zhushi" 	//提交（不能用）(推送单个文件使用)
+git push origin master	//推到服务端,(不能用)(推送单个文件使用)
 
 git remote add origin (添加服务端项目仓库的ssh密钥)	//连接服务端仓库
 git push -u origin master		//推动本地缓冲到服务端仓库
