@@ -1,0 +1,55 @@
+git		//查看git是否安装成功
+ssh		//查看ssh是否安装成功
+git init	//初始化当前本地仓库
+git status	//查看状态
+mkdir test	//创建文件夹test
+cd test		//切换到test目录
+touch a.md	//创建a.md文件
+vim a		//编辑a文件
+git add .	//增加所有问价及子文件
+git commit -m "zhushi"	//提交
+git log		//查看日志
+git branch aaa	//创建分支
+git checkout aaa//切换分支
+git merge	//合并分支
+git branch -d	//删除分支
+git tag		//添加版本标签
+cd ~/.ssh	//进入ssh文件
+ssh-keygen -t rsa -C "1835929466@qq.com"	//生成密钥
+clip < ~/.ssh/id_rsa.pub	//复制密钥
+ssh -T git@github.com		//验证密钥
+git config --global user.name "LiYaoheng"
+git config --global user.email "1835929466@qq.com"
+
+git add .	//添加所有文件及子文件到缓冲
+
+git commit -m "zhushi" 	//提交（不能用）(推送单个文件使用)
+git push origin master	//推到服务端,(不能用)(推送单个文件使用)
+
+git remote add origin (添加服务端项目仓库的ssh密钥)	//连接服务端仓库
+git push -u origin master		//推动本地缓冲到服务端仓库
+
+git clone (添加服务端项目仓库的ssh密钥)	//克隆项目到本地仓库
+
+git checkout -b aaa	//创建aaa分支并切换到该分支下
+=>git branch aaa	//创建aaa分支
+=>git checkout aaa	//切换到分支目录下
+git branch	//查看所有分支
+git merge aaa	//合并aaa分支
+git branch -d aaa	//删除aaa分支
+git branch -D aaa	//强行删除未merge的aaa分支
+
+git remote	//查看远程仓库分支
+git remote -v	//查看远程仓库分支详细信息
+
+git checkout -b aaa	//将本地仓库aaa分支推送到远程仓库origin
+git push origin aaa 	//与上一命令一起使用推送分支
+
+git tag (tagname)//创建版本标签
+git tag (tagname)(id)  //指定id的地方创建对应版本标签
+git tag		//查看版本标签
+git tag -a (tagname)-m (参数)	//创建带参数的tag
+git show (tagname)	//查看tagname的详细信息
+git tag -d (tagname)	//删除tagname
+git push origin (tagname)	//推动tagname到远程
+git push origin --tags	//推送所有本地tag
