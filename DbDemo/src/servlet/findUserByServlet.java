@@ -34,14 +34,19 @@ public class findUserByServlet extends HttpServlet {
 	protected void doGet(HttpServletRequest request, HttpServletResponse response)
 			throws ServletException, IOException {
 		// TODO Auto-generated method stub
-		UserDaoImpl userimpl = new UserDao();
 		String number = request.getParameter("number");
+		// System.out.println("this is number:" + number + "+aa");
+		// if (number == null || number == "") {
+		// request.getRequestDispatcher("selectUserServlet").forward(request,
+		// response);
+		// } else {
+		UserDaoImpl userimpl = new UserDao();
 		User user = new User();
 		user = userimpl.findUserByNumber(number);
 		List<User> userlist = new ArrayList<User>();
 		userlist.add(user);
 		request.getSession().setAttribute("userlist", userlist);
-		request.getRequestDispatcher("index.jsp").forward(request, response);
+		request.getRequestDispatcher("/index.jsp").forward(request, response);
 	}
 
 	/**

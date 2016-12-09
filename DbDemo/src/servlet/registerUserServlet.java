@@ -32,14 +32,24 @@ public class registerUserServlet extends HttpServlet {
 	protected void doGet(HttpServletRequest request, HttpServletResponse response)
 			throws ServletException, IOException {
 		// TODO Auto-generated method stub
-		User user = new User();
-		user.setNumber(request.getParameter("number"));
-		user.setName(request.getParameter("name"));
-		user.setSex(request.getParameter("sex"));
-		user.setBeizhu(request.getParameter("beizhu"));
-		UserDaoImpl userdaoimpl = new UserDao();
-		userdaoimpl.register(user);
-		request.getRequestDispatcher("/login.jsp").forward(request, response);
+		String s = request.getParameter("number");
+		String a = request.getParameter("name");
+		if (s == null || s == "") {
+			System.out.println("number不能为空");
+			request.getRequestDispatcher("/register.jsp").forward(request, response);
+		} else if (a == null || a == "") {
+			System.out.println("name不能为空");
+			request.getRequestDispatcher("/register.jsp").forward(request, response);
+		} else {
+			User user = new User();
+			user.setNumber(request.getParameter("number"));
+			user.setName(request.getParameter("name"));
+			user.setSex(request.getParameter("sex"));
+			user.setBeizhu(request.getParameter("beizhu"));
+			UserDaoImpl userdaoimpl = new UserDao();
+			userdaoimpl.register(user);
+			request.getRequestDispatcher("/login.jsp").forward(request, response);
+		}
 	}
 
 	/**

@@ -1,19 +1,32 @@
 package javabean;
 
+/**
+ * @author Administrator
+ *
+ */
 public class User {
 	private String number;
 	private String name;
 	private String sex;
 	private String beizhu;
 
+	/**
+	 * @return
+	 */
 	public String getNumber() {
 		return number;
 	}
 
+	/**
+	 * @param number
+	 */
 	public void setNumber(String number) {
 		this.number = number;
 	}
 
+	/**
+	 * @return
+	 */
 	public String getName() {
 		return name;
 	}

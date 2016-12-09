@@ -11,7 +11,7 @@
 	<h3 align="center">这是一个测试成功的页面，显示数据库中的所有用户。</h3>
 	<h4 align="center">============美丽的分界线============</h4>
 	<p>
-	<h3>当前用户：<%=session.getAttribute("name") %></h3>
+	<h3>当前用户：${name }</h3>
 	<a href="exitUserServlet"><input type="button" name="exit" value="退出"></a>
 	</p>
 	<form action="findUserByServlet" method="post">

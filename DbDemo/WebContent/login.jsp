@@ -1,5 +1,6 @@
 <%@ page language="java" contentType="text/html; charset=utf-8"
     pageEncoding="utf-8"%>
+<%@ taglib prefix="c" uri="http://java.sun.com/jsp/jstl/core" %>    
 <!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
 <html>
 <head>
@@ -10,8 +11,13 @@
 	<form action="loginUserServlet" method="post">
 		<h3 align="center">你好，欢迎欢迎，热烈欢迎。</h3>
 		<h4 align="center">============美丽的分界线============</h4>
-		<%if(session.getAttribute("ok")==null){session.setAttribute("ok", "欢迎使用");} %>
-		<h4 align="center"><%=session.getAttribute("ok")%></h4>
+		<%-- <%if(session.getAttribute("ok")==null){session.setAttribute("ok", "欢迎使用");} %>
+		<h4 align="center"><%=session.getAttribute("ok")%></h4> --%>
+		
+		<c:if test="${empty ok }">
+			<h4 align="center">欢迎使用</h4>
+		</c:if>
+		<h4 align="center"><c:out value="${ok}"></c:out></h4>		
 		<table align="center">
 			<tr>
 				<td>学 号：</td>
