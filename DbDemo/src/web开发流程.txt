@@ -1,0 +1,7 @@
+databaseUtil	//数据库连接
+		//connection ->单例模式，(抽象为工厂方法)
+
+dao		//数据库中表对应的对象
+action		//业务处理
+
+jsp		//前端页面

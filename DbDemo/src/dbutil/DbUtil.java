@@ -13,7 +13,7 @@ import javabean.User;
 
 public class DbUtil {
 
-	private static String url = "jdbc:mysql://localhost:3306/Test?user=root&password=123456";
+	private static String url = "jdbc:mysql://localhost:3306/Test?user=root&password=123456&useUnicode=true&characterEncoding=utf-8&useSSL=false";
 	private static java.sql.PreparedStatement pst;
 	private static String sql = "select * from student;";
 
