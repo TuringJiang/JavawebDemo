@@ -29,7 +29,7 @@ struts2.xml（action）
 
 jsp		//v层的显示页面(包含css+js+素材包)
 
-理解：来自jsp的表单的数据（request）在struts2中会自动与dao中创建好的对象的属性映射，但是在表单属性的命名时需要注意(对象名.属性名)。
+理解：来自jsp的表单的数据（request）在struts2中会自动与dao中创建好的对象（必需为对象或变量添加getset方法）的属性映射，但是在表单属性的命名时需要注意(对象名.属性名)。
 application\session\request在框架中同样适用，需要通过实现对应的接口来调用。
 
 以上是操作流程，接下来是数据处理流程：
@@ -38,9 +38,11 @@ application\session\request在框架中同样适用，需要通过实现对应的接口来调用。
 
 无框架模式数据处理过程：
 
-无框架模式开发数据通过request中存储数据，从jsp的form一直携带到servlet，在servlet中通过getParameter("String")方法取出来，取出来的数据存放到变量(或对象的属性中)即可进行后续的操作（存入数据库\session\application中等），然后通过response返回数据(或session\application直接取出)。
+无框架模式开发数据通过request中存储数据，从jsp的form一直携带到servlet，在servlet中通过getParameter("String")方法取出来，取出来的数据存放到变量(或对象的属性中)即可进行后续的操作（存入数据库request\session\application中等），然后通过response返回数据(或session\application直接取出)。
 
 struts2框架数据的处理过程：
 
-jsp中form提交后，在struts.xml中根据form中的action进行C层类方法的调用，在类方法中通过struts2的name映射到类中对应的属性中，即可取出jsp的数据
+jsp中form提交后，在struts.xml中根据form中的action进行C层类方法的调用，在类方法中struts2通过form中的name映射到类中（必需为对象或变量添加getset方法）对应的属性中，即可取出jsp的数据。然后保存在数据库request\session或application 中，完成数据在前后端的传输。
+
+具体struts2中数据怎么进行映射需要看struts2源码（github开源）进行理解。
 
