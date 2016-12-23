@@ -5,6 +5,6 @@ MVC开发模板（无框架）
 
 author：李耀恒
 
-邮箱：yaoheng_li@qq.com
+邮箱：yaoheng_li@outlook.com
 
 分享是一种美德。
