@@ -1,55 +1,56 @@
-git		//²é¿´gitÊÇ·ñ°²×°³É¹¦
-ssh		//²é¿´sshÊÇ·ñ°²×°³É¹¦
-git init	//³õÊ¼»¯µ±Ç°±¾µØ²Ö¿â
-git status	//²é¿´×´Ì¬
-mkdir test	//´´½¨ÎÄ¼ş¼Ğtest
-cd test		//ÇĞ»»µ½testÄ¿Â¼
-touch a.md	//´´½¨a.mdÎÄ¼ş
-vim a		//±à¼­aÎÄ¼ş
-git add .	//Ôö¼ÓËùÓĞÎÊ¼Û¼°×ÓÎÄ¼ş
-git commit -m "zhushi"	//Ìá½»
-git log		//²é¿´ÈÕÖ¾
-git branch aaa	//´´½¨·ÖÖ§
-git checkout aaa//ÇĞ»»·ÖÖ§
-git merge	//ºÏ²¢·ÖÖ§
-git branch -d	//É¾³ı·ÖÖ§
-git tag		//Ìí¼Ó°æ±¾±êÇ©
-cd ~/.ssh	//½øÈësshÎÄ¼ş
-ssh-keygen -t rsa -C "1835929466@qq.com"	//Éú³ÉÃÜÔ¿
-clip < ~/.ssh/id_rsa.pub	//¸´ÖÆÃÜÔ¿
-ssh -T git@github.com		//ÑéÖ¤ÃÜÔ¿
+git		//æŸ¥çœ‹gitæ˜¯å¦å®‰è£…æˆåŠŸ
+ssh		//æŸ¥çœ‹sshæ˜¯å¦å®‰è£…æˆåŠŸ
+git init	//åˆå§‹åŒ–å½“å‰æœ¬åœ°ä»“åº“
+git status	//æŸ¥çœ‹çŠ¶æ€
+mkdir test	//åˆ›å»ºæ–‡ä»¶å¤¹test
+cd test		//åˆ‡æ¢åˆ°testç›®å½•
+touch a.md	//åˆ›å»ºa.mdæ–‡ä»¶
+vim a		//ç¼–è¾‘aæ–‡ä»¶
+git add .	//å¢åŠ æ‰€æœ‰é—®ä»·åŠå­æ–‡ä»¶
+git commit -m "zhushi"	//æäº¤
+git log		//æŸ¥çœ‹æ—¥å¿—
+git branch aaa	//åˆ›å»ºåˆ†æ”¯
+git checkout aaa//åˆ‡æ¢åˆ†æ”¯
+git merge	//åˆå¹¶åˆ†æ”¯
+git branch -d	//åˆ é™¤åˆ†æ”¯
+git tag		//æ·»åŠ ç‰ˆæœ¬æ ‡ç­¾
+cd ~/.ssh	//è¿›å…¥sshæ–‡ä»¶
+ssh-keygen -t rsa -C "1835929466@qq.com"	//ç”Ÿæˆå¯†é’¥
+clip < ~/.ssh/id_rsa.pub	//å¤åˆ¶å¯†é’¥
+ssh -T git@github.com		//éªŒè¯å¯†é’¥
 git config --global user.name "LiYaoheng"
 git config --global user.email "1835929466@qq.com"
 
-git add .	//Ìí¼ÓËùÓĞÎÄ¼ş¼°×ÓÎÄ¼şµ½»º³å
+git add .	//æ·»åŠ æ‰€æœ‰æ–‡ä»¶åŠå­æ–‡ä»¶åˆ°ç¼“å†²
 
-git commit -m "zhushi" 	//Ìá½»£¨²»ÄÜÓÃ£©(ÍÆËÍµ¥¸öÎÄ¼şÊ¹ÓÃ)
-git push origin master	//ÍÆµ½·şÎñ¶Ë,(²»ÄÜÓÃ)(ÍÆËÍµ¥¸öÎÄ¼şÊ¹ÓÃ)
+git commit -m "zhushi" 	//æäº¤ï¼ˆä¸èƒ½ç”¨ï¼‰(æ¨é€å•ä¸ªæ–‡ä»¶ä½¿ç”¨)
+git push origin master	//æ¨åˆ°æœåŠ¡ç«¯,(ä¸èƒ½ç”¨)(æ¨é€å•ä¸ªæ–‡ä»¶ä½¿ç”¨)
 
-git remote add origin (Ìí¼Ó·şÎñ¶ËÏîÄ¿²Ö¿âµÄsshÃÜÔ¿)	//Á¬½Ó·şÎñ¶Ë²Ö¿â
-git push -u origin master		//ÍÆ¶¯±¾µØ»º³åµ½·şÎñ¶Ë²Ö¿â
+git remote add origin (æ·»åŠ æœåŠ¡ç«¯é¡¹ç›®ä»“åº“çš„sshå¯†é’¥)	//è¿æ¥æœåŠ¡ç«¯ä»“åº“
+git push -u origin master		//æ¨åŠ¨æœ¬åœ°ç¼“å†²åˆ°æœåŠ¡ç«¯ä»“åº“
 
-git clone (Ìí¼Ó·şÎñ¶ËÏîÄ¿²Ö¿âµÄsshÃÜÔ¿)	//¿ËÂ¡ÏîÄ¿µ½±¾µØ²Ö¿â
+git clone (æ·»åŠ æœåŠ¡ç«¯é¡¹ç›®ä»“åº“çš„sshå¯†é’¥)	//å…‹éš†é¡¹ç›®åˆ°æœ¬åœ°ä»“åº“
 
-git checkout -b aaa	//´´½¨aaa·ÖÖ§²¢ÇĞ»»µ½¸Ã·ÖÖ§ÏÂ
-=>git branch aaa	//´´½¨aaa·ÖÖ§
-=>git checkout aaa	//ÇĞ»»µ½·ÖÖ§Ä¿Â¼ÏÂ
-git branch	//²é¿´ËùÓĞ·ÖÖ§
-git merge aaa	//ºÏ²¢aaa·ÖÖ§
-git branch -d aaa	//É¾³ıaaa·ÖÖ§
-git branch -D aaa	//Ç¿ĞĞÉ¾³ıÎ´mergeµÄaaa·ÖÖ§
+git checkout -b aaa	//åˆ›å»ºaaaåˆ†æ”¯å¹¶åˆ‡æ¢åˆ°è¯¥åˆ†æ”¯ä¸‹
+=>git branch aaa	//åˆ›å»ºaaaåˆ†æ”¯
+=>git checkout aaa	//åˆ‡æ¢åˆ°åˆ†æ”¯ç›®å½•ä¸‹
+git branch	//æŸ¥çœ‹æ‰€æœ‰åˆ†æ”¯
+git merge aaa	//åˆå¹¶aaaåˆ†æ”¯
+git branch -d aaa	//åˆ é™¤aaaåˆ†æ”¯
+git branch -D aaa	//å¼ºè¡Œåˆ é™¤æœªmergeçš„aaaåˆ†æ”¯
 
-git remote	//²é¿´Ô¶³Ì²Ö¿â·ÖÖ§
-git remote -v	//²é¿´Ô¶³Ì²Ö¿â·ÖÖ§ÏêÏ¸ĞÅÏ¢
+git remote	//æŸ¥çœ‹è¿œç¨‹ä»“åº“åˆ†æ”¯
+git remote -v	//æŸ¥çœ‹è¿œç¨‹ä»“åº“åˆ†æ”¯è¯¦ç»†ä¿¡æ¯
 
-git checkout -b aaa	//½«±¾µØ²Ö¿âaaa·ÖÖ§ÍÆËÍµ½Ô¶³Ì²Ö¿âorigin
-git push origin aaa 	//ÓëÉÏÒ»ÃüÁîÒ»ÆğÊ¹ÓÃÍÆËÍ·ÖÖ§
+git checkout -b aaa	//å°†æœ¬åœ°ä»“åº“aaaåˆ†æ”¯æ¨é€åˆ°è¿œç¨‹ä»“åº“origin
+git push origin aaa 	//ä¸ä¸Šä¸€å‘½ä»¤ä¸€èµ·ä½¿ç”¨æ¨é€åˆ†æ”¯
 
-git tag (tagname)//´´½¨°æ±¾±êÇ©
-git tag (tagname)(id)  //Ö¸¶¨idµÄµØ·½´´½¨¶ÔÓ¦°æ±¾±êÇ©
-git tag		//²é¿´°æ±¾±êÇ©
-git tag -a (tagname)-m (²ÎÊı)	//´´½¨´ø²ÎÊıµÄtag
-git show (tagname)	//²é¿´tagnameµÄÏêÏ¸ĞÅÏ¢
-git tag -d (tagname)	//É¾³ıtagname
-git push origin (tagname)	//ÍÆ¶¯tagnameµ½Ô¶³Ì
-git push origin --tags	//ÍÆËÍËùÓĞ±¾µØtag
+git tag (tagname)//åˆ›å»ºç‰ˆæœ¬æ ‡ç­¾
+git tag (tagname)(id)  //æŒ‡å®šidçš„åœ°æ–¹åˆ›å»ºå¯¹åº”ç‰ˆæœ¬æ ‡ç­¾
+git tag		//æŸ¥çœ‹ç‰ˆæœ¬æ ‡ç­¾
+git tag -a (tagname)-m (å‚æ•°)	//åˆ›å»ºå¸¦å‚æ•°çš„tag
+git show (tagname)	//æŸ¥çœ‹tagnameçš„è¯¦ç»†ä¿¡æ¯
+git tag -d (tagname)	//åˆ é™¤tagname
+git push origin (tagname)	//æ¨åŠ¨tagnameåˆ°è¿œç¨‹
+git push origin --tags	//æ¨é€æ‰€æœ‰æœ¬åœ°tag
+123456
