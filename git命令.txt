@@ -1,4 +1,4 @@
-git		//查看git是否安装成功
+﻿git		//查看git是否安装成功
 ssh		//查看ssh是否安装成功
 git init	//初始化当前本地仓库
 git status	//查看状态
@@ -54,3 +54,4 @@ git tag -d (tagname)	//删除tagname
 git push origin (tagname)	//推动tagname到远程
 git push origin --tags	//推送所有本地tag
 123456
+987654
